@@ -13,4 +13,7 @@ kelas : Informatika B 22
 
 check this out!!
 
- https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest1/home.html
+Postest 1 :  https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest1/home.html
+
+(masih beta)
+Postest 2 : https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest2/index.html
