@@ -16,4 +16,5 @@ check this out!!
 Postest 1 :  https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest1/home.html
 
 (masih beta)
-Postest 2 : https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest2/index.html
+Postest 2 : 
+https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest2/index.html](https://tiket-pesawat-ahmadhidayat22.vercel.app/)https://tiket-pesawat-ahmadhidayat22.vercel.app/
