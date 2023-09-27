@@ -11,23 +11,15 @@
    
 
     <div class="hero-container">
-
-      <!-- <video playsinline autoplay muted loop >
-        <source src="./hero-video1.mp4" type="video/webm">
-        <source src="./hero-video1.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video> -->
-
-
-        <nav>
+        <nav id="home">
           <h1>Let's Flight</h1>
         
           <div class="list">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="#about">About me</a></li>
             </ul>
           </div>
 
@@ -39,12 +31,7 @@
                 <p>Sign up</p>
             </div>
           </div>
-          <!-- <div class="toggle_btn">
-            <div class="fa-solid fa-bars"></div>
-            <div class="fa-solid fa-bars"></div>
-            <div class="fa-solid fa-bars"></div>
-
-          </div> -->
+          
           <div class="toggle">
             
           </div>
@@ -57,6 +44,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cum, quasi consequuntur doloremque autem, non aliquam eveniet veniam, possimus quidem id. Quaerat ipsum consectetur obcaecati ab aliquid sequi optio libero.</p>
 
             <div class="btn">
+              
                 Booking Now
             </div>
         </div>
@@ -77,11 +65,12 @@
   
         </div>
           <div class="account">
-            <div class="login1">
-              <p>Log In</p>
-          </div>
-          <div class="sign-up1">
-              <p>Sign up</p>
+            <span>
+              <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="">Sign Up</a></li>
+              </ul>
+            </span>
           </div>
           </div>
   
@@ -89,7 +78,7 @@
     </div>
 
 
-    <section>
+    <section id="news">
       <div class="section1" >
 
       
@@ -181,23 +170,20 @@
       
 
 
-    <div class="about-me">
+    <div class="about-me" id="about">
       <div class="image">
 
       </div>
       <div class="details">
         <h1>Hey there,<br>I'm Akhmad Nur </h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad assumenda sed ullam deserunt sint cum aperiam itaque ut omnis, voluptate nulla. Distinctio enim eveniet aliquam ducimus, minus adipisci id! Eos?</p>
+        <p>An information engineering student at Mulawarman University who is interested in web and database development. also interested in game development and network security</p>
+        <p id="dv-mo">An information engineering student at Mulawarman University</p>
         
         <div class="btn-me">
-          <div class="btn-contact-me">
-            <!-- <a href="">Contact me</a> -->
-            <p>Contact me</p>
-
-          </div>
-          <div class="btn-cv">
-            <!-- <a href="">Download CV</a> -->
-            <p>Download CV</p>
+        
+          <button class="btn-contact-me">Contact Me</button>
+          <button class="btn-cv">Download CV</button>
+          
 
           </div>
         </div>
@@ -216,10 +202,10 @@
 
       <div class="bottom-bar">
         <ul>
-          <li>Home</li>
-          <li>News</li>
-          <li>Features</li>
-          <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Me</a></li>
         </ul>
       </div>
     </footer>

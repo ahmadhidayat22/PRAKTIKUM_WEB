@@ -3,8 +3,15 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
     
+}
+html, body{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    
+    max-width: 100%;
 }
 
 
@@ -34,11 +41,13 @@
     right: var(--hamburger-margin);
     z-index: 2;
     cursor: pointer;
+   
   }
-  
+ 
   .hamburger-menu:has(input:checked) {
     --foreground: white;
     --background: #ffffff;
+    
   }
   
   .hamburger-menu:has(input:focus-visible)::before,
@@ -88,36 +97,36 @@
   }
   
   .sidebar {
+    
     transition: translate var(--animation-timing);
     translate: -100%;
     /* padding: 0.5rem 1rem; */
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--foreground) ;
-    opacity: 90%;
+    opacity: 95%;
     color: var(--background);
     width: 100%;
-    height:900px;
+    height:700px;
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     z-index: 1;
-    
+
   }
+  
   .sidebar ul{
     margin-top: 100px;
   }
  .sidebar ul {
     width: 100%;
-    /* background-color: #fff; */
-    /* height: 300px; */
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    /* position: relative; */
+    
  }
  
  .sidebar ul li{position: relative; list-style: none;}
@@ -177,16 +186,6 @@
     overflow: hidden;
     
 }
-/* video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
-
-} */
 
 
 nav h1{
@@ -197,7 +196,8 @@ nav{
     padding: 30px 20px;
     display: flex;
     height: 50px;
-    /* border: 1px solid black; */
+    /* border: 1px solid black;
+     */
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -255,8 +255,8 @@ nav{
 .get-in{
     display: flex;
     width: 200px;
-    margin-right: 50px;
     justify-content: space-around;
+ 
     
 
 }
@@ -325,9 +325,6 @@ nav{
 .section1{
     margin: 100px auto;
     width: 70%;
-    /* height: 300px; */
-    /* border: 1px solid black; */
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,8 +349,7 @@ nav{
     display: flex;
     gap: 80px;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
-    /* width: 100%; */
+
 }
 .caption-image{
     padding: 20px;
@@ -364,7 +360,6 @@ nav{
 
 .section2{
     width: 70%;
-    /* border: 1px solid green; */
     margin: 80px auto;
     position: relative;
     box-sizing: border-box;
@@ -410,17 +405,11 @@ nav{
     position: absolute;
     top: 25%;
     left: 50%;
-    
-    /* transform: translateX(-30vh); */
-    
 }
 
 footer{
     margin-top: 40px;
-    /* text-align: center; */
     width: 100%;
-    /* border: 1px solid black; */
-    /* height: 20vh; */
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -436,6 +425,7 @@ footer{
 }
 .top-bar p{
     margin-top: 20px;
+    
 }
 .bottom-bar{
     border-top: 1px solid rgb(0, 0, 0) ;
@@ -452,6 +442,10 @@ footer{
     font-weight: 500;
     font-size: 20px;
     
+}
+.bottom-bar ul li a{
+    text-decoration: none;
+    color: black;
 }
 .bottom-bar ul li{
     list-style: none;
@@ -486,7 +480,12 @@ footer{
     background-size: cover ;
     background-position: -20px 0;
 }
-
+.about-me .details p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-indent: 10px;
+    
+}
 .about-me .details{
     display: flex;
     flex-direction: column;
@@ -506,33 +505,51 @@ footer{
     padding: 0.5rem 1   rem;
 
 }
-.btn-me .btn-contact-me,
-.btn-cv{
-    /* width: 80px;  */
-    height: max-content;
-    border: 3px solid #E0B100;
-    padding: 10px;
-    border-radius: 10px ;
-    color: white;
-    cursor: pointer;
-
-
-}
-.btn-contact-me p,
-.btn-cv p{
-    /* text-decoration: none; */
+button {
+    position: relative;
+    
+    height: 35px;
+    width: 120px;
+    margin: 10px 7px;
+    padding: 5px 5px;
     font-weight: 700;
+    font-size: 12px;
     letter-spacing: 1px;
-}
+    color: #383736;
+    border: 2px #383736 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+  .btn-contact-me:hover {
+    color: whitesmoke;
+  }
+  
+  .btn-contact-me:before {
+    content: "";
+    position: absolute;
+    background:#E0B100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+  }
+  
+  .btn-contact-me:hover:before {
+    top: 0;
+  }
 
-.btn-contact-me {
-    background-color: #E0B100;
-    
-}
-/* .btn-contact-me a{
-    color:white;
-    
-} */
 
 .btn-contact-me:hover{
     transition: all 0.1s ease-in-out;
@@ -615,7 +632,9 @@ footer{
         width: 100%;
         height: 800px;
     }
-    
+    .services-left{
+        margin-top:200px ;
+    }
     nav h1{
         margin-left: 60px;
         font-size: 30px;
@@ -638,7 +657,7 @@ footer{
         display: none;
     }
     .services-right{
-        top: -100px;
+        top: -150px;
         right: 150px;
         
     }
@@ -660,7 +679,7 @@ footer{
 
 
 
-@media screen and (max-width:769px){
+@media screen and (max-width:768px){
     .hero-container{
         width: 100%;
         height: 400px;
@@ -668,14 +687,24 @@ footer{
     nav h1{
         font-size: 25px;
     }
+    .head3{
+        margin-left: 0;
+    }
+    .services-right{
+        right: 55px;
+    }
     .describe{
         width: 400px;
-        top: 100px;
+        top: 40px;
         left: 80px;
     }
     
     .describe p{
         display: none;
+    }
+    .describe h2{
+        font-size: 20px;
+
     }
     .describe .btn{
         position: absolute;
@@ -687,5 +716,218 @@ footer{
     .navigation{
         display: block;
     }
+    .section1 .aqw{
+        font-size: 20px;
+    }
 
+    .about-me{
+        gap: 20px;
+
+    }
+    .about-me .image{
+        margin-left: 0px;
+        
+    }
+    .about-me .details{
+        gap: 20px;
+    }
+    .about-me .details h1{
+        font-size: 25px;
+    }
+    .about-me .details p{
+        font-size: 12px;
+    }
+    .about-me .details .btn-me{
+        /* gap: 10px; */
+        width: 250px;
+    }
+    .details button{
+        width: 120px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .top-bar{
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hero-container{
+        width: 100%;
+        height: 400px;
+    }
+    .hero-container nav h1{
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    :root{
+        --bar-width: 40px;
+        --bar-height: 4px;
+    }
+    .describe {
+        width: 230px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 10px;
+        text-align: center;
+        
+    }
+    .describe h2{
+        font-size: 18px;
+    }
+    .describe .btn{
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 20px;
+        font-size: 14px;
+        padding: auto 5px;
+        text-align: center;
+        
+    }
+    .section1{
+        width: 70%;
+        text-align: center;
+    }
+    .card-parent{
+        width: 100%;
+        
+    }
+    .services-right{
+        right: 0px;
+        top: -200px;
+        margin-right: 0;
+        text-align: center;
+    }
+    .services-head{
+        display: none;
+    }
+    .services-btn{
+        top: 90px;
+        
+    }
+    .about-me{
+        position: relative;
+        height: 300px;
+    }
+    .about-me .image{
+        margin-top: 20px;
+        height: 10rem;
+        width: 14rem;
+        align-self: self-start;
+    }
+    .about-me .details{
+        margin: 20px 0;
+        width: 180px;
+        align-self: self-start;
+        
+    }
+    .about-me .details h1{
+        font-size: 15px;
+    }
+    .about-me .details p{
+        display: none;
+    }
+    .about-me .details #dv-mo{
+        display: inline;
+    }
+    .details .btn-me{
+        position: absolute;
+       
+       
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 40px;
+    }
+    .bottom-bar{
+        display: none;
+    }
+    footer .top-bar{
+        width: 100%;
+        border: 1px solid #ccc;
+        font-size: 10px;
+        padding: 10px;
+        
+    }
+    footer{
+        width: 100%;
+        
+    }
+}
+
+
+
+@media screen and (max-width:375px) {
+    .services-btn{
+        top: 110px;
+        right: 50%;
+        transform: translateX(50px);
+        /* left: 0; */
+    }
+    .sidebar ul{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:320px) {
+    .hero-container{
+        width: 100%;
+        height: 300px;
+    }
+    .describe{
+        top: 0;
+    }
+    .describe .btn{
+        width: 70px;
+        height: 10px;
+        font-size: 10px;
+    }
+    :root{
+        --bar-width:30px;
+        --bar-height:3px;
+        --hamburger-gap: 6px;
+    }
+    .hamburger-menu{
+        margin-top: 5px;
+    }
+    .section1 h2{
+        font-size: 20px;
+    }
+    .section1 .aqw{
+        font-size: 15px;
+    }
+    .card-parent .card{
+        height: 400px;
+    }
+    .card img{
+        height: 250px;
+    }
+    .services-right h2{
+        font-size: 25px;
+    }
+    .services-right .services-btn{
+        height: 20px;
+        font-size: 14px;
+
+    }
+    .about-me{
+        height: 280px;
+        
+    }
+    .about-me .image{
+        height: 120px;
+    }
+    
+    .about-me .details h1{
+        font-size: 14px;
+    }
+
+}
+
+#dv-mo{
+    display: none;
 }
