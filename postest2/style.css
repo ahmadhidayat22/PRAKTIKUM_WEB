@@ -3,13 +3,15 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, ;
+    
 }
 
 
 
 :root {
-    --bar-width: 60px;
-    --bar-height: 8px;
+    --bar-width: 50px;
+    --bar-height: 5px;
     --hamburger-gap: 6px;
     --foreground: #333;
     --background: white;
@@ -252,8 +254,8 @@ nav{
 
 .get-in{
     display: flex;
-    width: 300px;
-    margin-right: 80px;
+    width: 200px;
+    margin-right: 50px;
     justify-content: space-around;
     
 
@@ -460,14 +462,89 @@ footer{
 
 
 .about-me{
-    background-color: #E0B100;
+    background-color: #4f6c88;
     width: 70%;
     height: 40vh;
     margin: 150px auto;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content : space-between; */
+    gap: 80px;
+    padding: 1rem 2.5rem;
+
+    color: white    ;
+
+}
+.about-me .image{
+    width:250px;
+    height: 250px;
+    background-color: #fff;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: url(./hero-me.jpg);
+    background-size: cover ;
+    background-position: -20px 0;
+}
+
+.about-me .details{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 40px;
+    height: 250px;
+    width: 50%;
+}
+.about-me .btn-me{
+    /* background-color: #fff; */
+    width: 300px;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1   rem;
+
+}
+.btn-me .btn-contact-me,
+.btn-cv{
+    /* width: 80px;  */
+    height: max-content;
+    border: 3px solid #E0B100;
+    padding: 10px;
+    border-radius: 10px ;
+    color: white;
+    cursor: pointer;
 
 
 }
+.btn-contact-me p,
+.btn-cv p{
+    /* text-decoration: none; */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-contact-me {
+    background-color: #E0B100;
+    
+}
+/* .btn-contact-me a{
+    color:white;
+    
+} */
+
+.btn-contact-me:hover{
+    transition: all 0.1s ease-in-out;
+    background-color: #4f6c88;
+}
+.btn-cv:hover{
+    transition: all 0.1s ease-in-out;
+    background-color: #E0B100;
+}
+
+
+
 
 .services-left{
     position: relative;
@@ -497,6 +574,21 @@ footer{
     /* .hero-container h1{
         font-size: 10px;
     } */
+    .hero-container{
+        height: 600px;
+    }
+    .describe {
+        top: 80px;
+        left: 120px;
+        width: 500px;
+    }
+    .describe h2{
+        font-size: 40px;
+    }
+    .get-in{
+        margin-right: 0;
+        /* border: 1px solid black; */
+    }
    .section2 img{
     /* transform: translateX(10px); */
     left: 60%;
@@ -507,6 +599,13 @@ footer{
     font-size: 35px;
 
    }
+   .about-me .image{
+    margin: 10px 0 10px 30px;
+    height: 240px;
+
+    
+   }
+   
    
    
 }
@@ -516,6 +615,7 @@ footer{
         width: 100%;
         height: 800px;
     }
+    
     nav h1{
         margin-left: 60px;
         font-size: 30px;
@@ -563,7 +663,7 @@ footer{
 @media screen and (max-width:769px){
     .hero-container{
         width: 100%;
-        height: 500px;
+        height: 400px;
     }
     nav h1{
         font-size: 25px;
