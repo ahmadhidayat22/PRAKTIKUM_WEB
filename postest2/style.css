@@ -78,7 +78,6 @@ html, body{
     outline: none;
     pointer-events: none;
   }
-  
   .hamburger-menu:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
@@ -170,7 +169,8 @@ html, body{
 
 
 
-  .hamburger-menu:has(input:checked) + .sidebar {
+
+.hamburger-menu:has(input:checked) + .sidebar  {
     translate: 0;
   }
 
@@ -646,6 +646,12 @@ button {
     .list ul{
         gap: 30px;
     }
+    .about-me .details h1 {
+        font-size: 28px;
+    }
+    .about-me .details {
+        gap: 15px;
+    }
     .describe h2{
         font-size: 30px;
         
@@ -665,14 +671,13 @@ button {
         right: 100px;
     }
     .head2{
-        /* position: absolute; */
+      
         margin-left: 100px;
 
     }
     .head3{
         margin-left: 200px;
-        /* position: absolute; */
-        /* top: 350px; */
+        
     }
 }
 
@@ -869,6 +874,9 @@ button {
     }
     .sidebar ul{
         font-size: 25px;
+    }
+    .about-me .image{
+        height: 150px;
     }
     
 }
