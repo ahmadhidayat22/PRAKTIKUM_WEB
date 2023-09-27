@@ -15,6 +15,5 @@ check this out!!
 
 Postest 1 :  https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest1/home.html
 
-(masih beta)
 Postest 2 : 
 https://tiket-pesawat-ahmadhidayat22.vercel.app/
