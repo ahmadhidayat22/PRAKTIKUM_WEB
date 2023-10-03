@@ -17,3 +17,6 @@ Postest 1 :  https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest1/home.html
 
 Postest 2 : 
 https://tiket-pesawat-ahmadhidayat22.vercel.app/
+
+postest 3 :
+https://ahmadhidayat22.github.io/PRAKTIKUM_WEB/postest3/index.html
