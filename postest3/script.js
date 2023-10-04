@@ -1,13 +1,13 @@
-// const toogle = document.getElementById('toggle-mode');
-// const body = document.querySelector('body');
-// const card = document.querySelectorAll(".card");
-// const footer = document.querySelectorAll('.bottom-bar ul li a') 
+var oldSrc = './assets/moon.png';
+var newSrc = './assets/sun.png';
 
-$('#toggle-mode').click(function(){
-    if($('#toggle-mode').hasClass('bi-moon-fill')){
-        //dark mode active
-
-        $('#toggle-mode').removeClass('bi-moon-fill').addClass(' bi-brightness-high-fill');
+$('#toogle-mode').click(function(){
+    // $('img[src="' + oldSrc + '"]').attr('src', newSrc);
+    
+    if($('img').attr('src') == oldSrc){
+    //     //dark mode active
+    // alert("kuy")
+        $('img[src="' + oldSrc + '"]').attr('src', newSrc);
         $('body').css('background-color', 'black');
         $('body').css('color', 'white');
         $('body').css('transition', '2s');
@@ -18,9 +18,8 @@ $('#toggle-mode').click(function(){
 
 
     }else{
-    
-        
-        $('#toggle-mode').removeClass('bi-brightness-high-fill').addClass('bi-moon-fill');
+        // alert("ler")
+        $('img[src="' + newSrc + '"]').attr('src', oldSrc);
         $('body').css('background-color', 'white');
         $('body').css('color', 'black');
         $('body').css('transition', '2s');
@@ -30,26 +29,21 @@ $('#toggle-mode').click(function(){
         $('.bottom-bar ul li a').css('color','black');
 
         
-       
+    }
         
 
 
-    }
+    // }
 
 })
-$('.btn').click(function(){
-    
-    Swal.fire({
-        title: 'Coming Soon!',
-        showClass: {
-          popup: 'swal2-show',
-          
-        },
-        hideClass: {
-          popup: 'swal2-hide'
-        }
-      })
-} ); 
+
+const btn_b = document.getElementById('btn-book')
+
+btn_b.addEventListener('click' , function(){
+    alert("Coming Soon!")
+
+})
+
 
 
 function info(){
@@ -63,6 +57,10 @@ function info(){
     }
 }
 
+
+
+
+
 $('.navigation').click(function(){
 
     if($('#inp').is(':checked')){
@@ -75,3 +73,4 @@ $('.navigation').click(function(){
    
 })
   
+
