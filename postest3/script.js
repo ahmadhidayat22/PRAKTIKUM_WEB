@@ -18,7 +18,6 @@ $('#toogle-mode').click(function(){
 
 
     }else{
-        // alert("ler")
         $('img[src="' + newSrc + '"]').attr('src', oldSrc);
         $('body').css('background-color', 'white');
         $('body').css('color', 'black');
@@ -31,10 +30,6 @@ $('#toogle-mode').click(function(){
         
     }
         
-
-
-    // }
-
 })
 
 const btn_b = document.getElementById('btn-book')
@@ -49,6 +44,7 @@ btn_b.addEventListener('click' , function(){
 function info(){
     if($('.form-email').css('display') == 'flex'){
         $(".form-email").css('display', 'none')
+        $(".form-email").css('transition', '2s');
         
     }
     else{
@@ -64,13 +60,18 @@ function info(){
 $('.navigation').click(function(){
 
     if($('#inp').is(':checked')){
-        $('html').css('overflow-y', 'hidden');
+        console.log($(inp));
+        $('.hamburger-menu').css('position', 'fixed');
+
+
     }else{
-        $('html').css('overflow-y', 'scroll');
+        $('.hamburger-menu').css('position', 'absolute');
+        
+
+        // $('html').css('overflow-y', 'scroll');
 
 
     }
    
 })
   
-

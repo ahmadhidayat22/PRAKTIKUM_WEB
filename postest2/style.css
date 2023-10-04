@@ -939,3 +939,12 @@ button {
 #dv-mo{
     display: none;
 }
+
+.toggle-dark-mode{
+    position: absolute; 
+    right: 100px;
+    top: 30px;
+    cursor: pointer;
+    
+
+}
