@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./signup/style.css" />
-    <link href="./signup/style.css?version=<?php echo filemtime('style.css'); ?>" rel="stylesheet">
+    <link href="./css/style.css?version=<?php echo filemtime('style.css'); ?>" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
     <script src="jquery.js"></script>
@@ -13,6 +13,12 @@
     <title>Login</title>
 </head>
 <body>
+<div class="icon">
+      <a href="index.html">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+
+      </a>
+    </div>
     <div class="login">
         <span>
             <a href="home.php">
@@ -61,9 +67,13 @@ if (isset($_POST['submit'])) {
         ";
         exit();
     } else if ($username == 'admin' && $password == '123') {
-        echo 'admin form';
+        echo "
+        <script> 
+
+            window.location.href = './admin/admin.html';
+        </script>
+        ";
     } else {
-        // echo "invalid username/password";
         echo "
         <script>
             $('.login p').css('display','block');

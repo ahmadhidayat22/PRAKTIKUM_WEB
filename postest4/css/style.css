@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+@keyframes rotate {
+  100% {
+    background-position: 25% 50%;
+  }
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  background-image: url(../assets/liquid-cheese.svg);
+  background-size: cover;
+  font-family: "Euclid Circular A";
+  color: #000;
+  animation: rotate 5s infinite alternate linear;
+  /* overflow-x: hidden; */
+
+}
+
+@media screen and (width >= 500px) {
+  body {
+    padding: 0;
+  }
+  
+}
+
+@media screen and (min-width : 1024px) {
+  body {
+    padding: 0;
+    /* padding: 0 30px 44px; */
+  }
+  .login > h2{
+    margin: 0 0 90px;
+
+  }
+  .login-form{
+  gap: 20px;
+
+  }
+  .login-form > input{
+  height: 56px;
+
+  }
+  
+
+  
+}
+
+.login {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  padding: 20px 30px 44px;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  text-align: center;
+  
+}
+.login p{
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    width: 70%;
+    
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .login {
+    top: 0;
+    right: 0;
+    left: auto;
+    translate: 0 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 0;
+    padding-top: 20px;
+  }
+  .login > h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 20px;
+  }
+  .login-form{
+    gap: 15px;
+  }
+  .login-form > input {
+    height: 50px;
+  }
+}
+
+/* .login > img {
+  width: 160px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+} */
+
+.login > h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.login > h3 {
+  color: rgba(0, 0, 0, 0.38);
+  margin: 0 0 6px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.login-form {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.login-form > input,
+.login-form > button {
+  width: 100%;
+  outline: none;
+  padding: 0;
+  border-radius: 10px;
+  font-family: inherit;
+  
+  
+}
+
+
+.login-form > input {
+  background: #eeeeee;
+  border: 0;
+  font-size: 18px;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-form > button {
+  cursor: pointer;
+  height: 56px;
+  margin-top: 20px;
+  background: #685aff;
+  color: #f9f9f9;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.login-form > a {
+  color: #685aff;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+span {
+  margin-bottom: 20px;
+  /* border: 1px solid black; */
+  color: red;
+  display: none;
+}
+
+.login-form > p{
+  color: red;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+
+.icon{
+  font-size: 50px;
+  position: absolute;
+  z-index: 999;
+  top: 10px;
+  left: 30px;
+  
+}
+.icon a{
+  color: rgb(0, 0, 0);
+  
+
+}

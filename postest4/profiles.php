@@ -9,34 +9,29 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./signup/styleProfiles.css">
+    <link rel="stylesheet" href="./css/styleProfiles.css">
+    <link rel="shortcut icon" href="./assets/plane.png">
 
-    <title>Document</title>
+    <title>Profile</title>
 
     
 </head>
 <body>
-    <!-- <section>
-        <h2><?php echo $_SESSION['fullname']; ?></h2>
-
-
-    </section> -->
-    <span>
+    <span class="user_hero">
         <a href="home.php">
             <i class="bi bi-arrow-left-circle-fill"></i>
-            
         </a>
 
     </span>
     
     <div class="aside">
-        <ul>
-            <li>
-                <span><i class="bi bi-person-circle"></i>
-                    <h2><?= $_SESSION['username'] ?></h2>
-                </span>
-            </li>
 
+        <div class="head"><i class="bi bi-person-circle"></i>
+            <h2><?= $_SESSION['username'] ?></h2>
+        </div>
+            
+    
+         <ul>
             <li><span><i class="bi bi-bookmark"></i>
                 <p>Saved</p>
             </span></li>

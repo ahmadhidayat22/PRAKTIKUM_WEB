@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='jquery.js'></script>;
-
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
 
 <?php
-session_set_cookie_params(3600); // Mengatur waktu kedaluwarsa sesi menjadi 1 jam
+session_set_cookie_params(10800); // Mengatur waktu kedaluwarsa sesi menjadi 3 jam
 session_start();
 
 if($_POST['password'] == $_POST['cpassword']){
@@ -26,18 +13,6 @@ if($_POST['password'] == $_POST['cpassword']){
         $noHp = $_POST["number"];
         $password = $_POST["password"];
     
-        // Lakukan validasi data, lakukan penyimpanan ke database, atau tindakan lain sesuai kebutuhan.
-        // Di sini, kita hanya mencetak kembali data yang diinputkan.
-    
-    //     echo "<div class='container'>";
-    //     echo "full name: $fullname<br>";
-    //     echo "Username: $username<br>";
-    //     echo "Email: $email<br>";
-    //     echo "Password: $password<br>";;
-    // // // Tampilkan data lainnya...
-    
-    //     echo "</div>";
-       
         $_SESSION['fullname'] = $fullname;
         $_SESSION['username'] = $username;
         $_SESSION['email'] = $email;
@@ -51,15 +26,14 @@ if($_POST['password'] == $_POST['cpassword']){
 else{
     
 
-    echo "<script type=\'text/javascript\'>
-        window.onload = function() {
-        document.querySelector('span').style.display = 'block';
-        };
-    </script>;
-
+    echo "
+    <script>
+    alert('Please enter');
+    </script>
     ";
+    
     header('location:./signUp.html');
     
 }
-// exit();
+
 ?>
