@@ -5,49 +5,29 @@
   <head>
     <title>Login 2</title>
     <link rel="stylesheet" href="./signup/style.css" />
-    
-    <style>
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-      margin: 0;
-      }
-
-      /* Firefox */
-      input[type=number] {
-        -moz-appearance: textfield;
-      }
-  </style>
-
   </head>
   <body>
     <div class="login">
+     
       
       <h2>Sign Up</h2>
-      <span>
-        
-        Password and confirm password dosent exist
-
-      </span>
-
-      <form action="signUp.php"   method="POST" class="login-form">
+      
+      
+      <form action="signUp.php" method="POST" class="login-form">
         <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
 
         <input type="text" id="username" name="username" placeholder="Username" required>
 
         <input type="email" id="email" name="email" placeholder="Email" required>
 
-        <input type="number" id="number" name="number" placeholder="Nomor Telepon" required>
-
         <input type="password" name="password" id="password" placeholder="Password" required/>
-        <input type="password" name="cpassword" placeholder="Confirm Password" required />
+        <input type="password" placeholder="Confirm Password" required />
 
-        
         
         <button type="submit">LOGIN</button>
-        
+
         <a href="login.php">already have an account ? </a>
-        
+
       </form>
 
 

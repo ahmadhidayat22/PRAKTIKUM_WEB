@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -25,37 +24,12 @@ body {
   font-family: "Euclid Circular A";
   color: #000;
   animation: rotate 5s infinite alternate linear;
-  /* overflow-x: hidden; */
-
 }
 
 @media screen and (width >= 500px) {
   body {
     padding: 0;
   }
-  
-}
-
-@media screen and (min-width : 1024px) {
-  body {
-    padding: 0;
-    /* padding: 0 30px 44px; */
-  }
-  .login > h2{
-    margin: 0 0 90px;
-
-  }
-  .login-form{
-  gap: 20px;
-
-  }
-  .login-form > input{
-  height: 56px;
-
-  }
-  
-
-  
 }
 
 .login {
@@ -69,16 +43,11 @@ body {
   border-radius: 1.25rem;
   background: #ffffff;
   text-align: center;
-  
-}
-.login p{
-  display: none;
 }
 
 @media screen and (max-width: 500px) {
   .login {
     width: 70%;
-    
   }
 }
 
@@ -92,32 +61,22 @@ body {
     height: 100%;
     width: 50%;
     border-radius: 0;
-    padding-top: 20px;
-  }
-  .login > h2 {
-    font-size: 36px;
-    font-weight: 600;
-    margin: 0 0 20px;
-  }
-  .login-form{
-    gap: 15px;
-  }
-  .login-form > input {
-    height: 50px;
+    padding-top: 240px;
   }
 }
 
-/* .login > img {
+.login > img {
   width: 160px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
-} */
+}
 
 .login > h2 {
   font-size: 36px;
   font-weight: 600;
+  margin: 0 0 90px;
 }
 
 .login > h3 {
@@ -129,6 +88,7 @@ body {
 
 .login-form {
   display: grid;
+  gap: 20px;
   place-items: center;
   width: 100%;
   margin: 0;
@@ -136,15 +96,13 @@ body {
 
 .login-form > input,
 .login-form > button {
+  height: 56px;
   width: 100%;
   outline: none;
   padding: 0;
   border-radius: 10px;
   font-family: inherit;
-  
-  
 }
-
 
 .login-form > input {
   background: #eeeeee;
@@ -152,13 +110,11 @@ body {
   font-size: 18px;
   padding: 0;
   text-align: center;
-  margin-top: 10px;
 }
 
 .login-form > button {
   cursor: pointer;
   height: 56px;
-  margin-top: 20px;
   background: #685aff;
   color: #f9f9f9;
   border: 0;
@@ -172,18 +128,4 @@ body {
   font-size: 1rem;
   text-align: left;
   text-decoration: none;
-}
-
-
-span {
-  margin-bottom: 20px;
-  /* border: 1px solid black; */
-  color: red;
-  display: none;
-}
-
-.login-form > p{
-  color: red;
-  font-weight: 600;
-  letter-spacing: 0.8px;
 }

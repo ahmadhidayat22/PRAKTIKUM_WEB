@@ -31,11 +31,11 @@ session_start();
       <h1>welcome <span><?php echo $_SESSION['fullname']; 
       ?></span></h1>
       <p>this is an user page</p>
- 
+
       <p>coming soon!</p>
-      <a href="./profiles.php" class="btn">Profiles</a>
+      <a href="#" class="btn">Profiles</a>
      
-      <a href="./index.html" class="btn" name="logout" >logout</a>
+      <a class="btn" name="logout" >logout</a>
       
    </div>
 
